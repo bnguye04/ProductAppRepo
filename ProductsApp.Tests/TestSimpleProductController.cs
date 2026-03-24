@@ -17,6 +17,7 @@ namespace ProductsApp.Tests
             var testProducts = GetTestProducts();
             var controller = new ProductsController(testProducts);
             var result = controller.GetAllProducts() as Product[];
+            Assert.AreEqual(testProducts.Length, result.Length);
         }
 
         [TestMethod]
