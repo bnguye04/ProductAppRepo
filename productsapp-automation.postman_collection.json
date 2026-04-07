@@ -72,14 +72,21 @@
               "var jsonData = pm.response.json();\r",
               "\r",
               "pm.test(\"value of Id to be 1\", () => { pm.expect(jsonData.Id).to.equal(1) });\r",
-              "pm.test(\"value of Name to be 'Yo-yo'\", () => { pm.expect(jsonData.Name).to.equal(\"Yo-yo\") });\r",
-              "pm.test(\"value of Category to be 'Toys'\", () => { pm.expect(jsonData.Category).to.equal(\"Toys\") });\r",
-              "pm.test(\"value of Price to be 3.75\", () => { pm.expect(jsonData.Price).to.equal(3.75) });\r",
+              "pm.test(\"value of Name to be 'Tomato Soup'\", () => { pm.expect(jsonData.Name).to.equal(\"Tomato Soup\") });\r",
+              "pm.test(\"value of Category to be 'Groceries'\", () => { pm.expect(jsonData.Category).to.equal(\"Groceries\") });\r",
+              "pm.test(\"value of Price to be 1\", () => { pm.expect(jsonData.Price).to.equal(1) });\r",
               "pm.test(\"response to be 200 OK\", () => { pm.response.to.have.status(200) });"
             ],
             "type": "text/javascript",
             "packages": {},
             "requests": {}
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "packages": {},
+            "type": "text/javascript"
           }
         }
       ],
